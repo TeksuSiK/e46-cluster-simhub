@@ -50,5 +50,4 @@ void sendIndicators()
     frameIndicators[4] = indicators1;
 
     ibusTrx.write(frameIndicators);
-    ibusTrx.available();
 }

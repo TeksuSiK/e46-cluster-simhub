@@ -21,6 +21,7 @@
 - Indicators
 - High beams
 - Fog lights
+- Time
 
 ## TODO
 - Fuel
