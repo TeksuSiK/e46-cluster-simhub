@@ -27,8 +27,8 @@
 - Consumption
 
 ## Wiring
-My wiring is a bit complicated beacuse it's a part of a bigger projects. You can easily change some parts to ready made like relay drivers or CAN module.
-![Schematic][assets/schematic.png]
+My wiring is a bit complicated beacuse it's a part of a bigger project. You can easily change some parts to ready made like relay drivers or CAN module.
+![Schematic](assets/schematic.png)
 
 ## Installation
 - Clone this repository
