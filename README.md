@@ -47,3 +47,4 @@ Coming soong
 
 ## Check out my other projects
 - [BMW E87 Cluster](https://github.com/TeksuSiK/e87-cluster-simhub)
+- [BMW F-Series Gear Lever](https://github.com/TeksuSiK/bmw-gws-simhub)
