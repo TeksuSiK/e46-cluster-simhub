@@ -20,7 +20,7 @@ void setup() {
     digitalWrite(MCP2021_TXE_PIN, HIGH);
 
     Serial2.begin(9600, SERIAL_8E1);
-    ibusTrx.begin(Serial2);
+    //ibusTrx.begin(Serial2);
 
     if (CAN.begin(MCP_ANY, CAN_500KBPS, CAN_CLOCK) == CAN_OK)
     {

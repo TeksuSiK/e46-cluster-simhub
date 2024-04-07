@@ -2,7 +2,7 @@
 #include <kbus.h>
 #include <lights.h>
 
-uint8_t frameIndicators[9] = {0xD0, 0x08, 0xBF, 0x5B, 0x00, 0x00, 0x00, 0x00, 0x00};
+uint8_t frameIndicators[10] = {0xD0, 0x08, 0xBF, 0x5B, 0x00, 0x00, 0x00, 0x00, 0x01, 0x00};
 
 void sendIndicators()
 {
@@ -49,5 +49,5 @@ void sendIndicators()
 
     frameIndicators[4] = indicators1;
 
-    ibusTrx.write(frameIndicators);
+    sendKbusBuf(frameIndicators);
 }
