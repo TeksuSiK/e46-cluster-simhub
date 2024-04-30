@@ -32,8 +32,4 @@ var cruise_control = Number($prop('GameRawData.TruckValues.CurrentValues.Dashboa
 var dde = Number($prop('TruckSimulatorPlugin.Engine.Starting'));
 var coolant_overheating = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.WaterTemperature'));
 
-var currentTime = new Date();
-var hour = currentTime.getHours();
-var minute = currentTime.getMinutes();
-
-return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};${hour};${minute};\n`
+return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`

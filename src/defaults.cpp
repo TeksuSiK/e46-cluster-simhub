@@ -23,6 +23,3 @@ bool g_check_engine = false;
 bool g_cruise_control = false;
 bool g_dde = false;
 bool g_coolant_overheating = false;
-
-uint8_t g_time_hour = 0;
-uint8_t g_time_minute = 0;

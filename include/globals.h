@@ -28,6 +28,3 @@ extern bool g_check_engine;
 extern bool g_cruise_control;
 extern bool g_dde;
 extern bool g_coolant_overheating;
-
-extern uint8_t g_time_hour;
-extern uint8_t g_time_minute;

@@ -34,9 +34,6 @@ void readSerial()
         bool dde = Serial.readStringUntil(';').toInt();
         bool coolant_overheating = Serial.readStringUntil(';').toInt();
 
-        uint8_t time_hour = Serial.readStringUntil(';').toInt();
-        uint8_t time_minute = Serial.readStringUntil(';').toInt();
-
         String noop = Serial.readStringUntil('\n');
 
         g_ignition = ignition;
@@ -62,8 +59,5 @@ void readSerial()
         g_cruise_control = cruise_control;
         g_dde = dde;
         g_coolant_overheating = coolant_overheating;
-
-        g_time_hour = time_hour;
-        g_time_minute = time_minute;
     }
 }
