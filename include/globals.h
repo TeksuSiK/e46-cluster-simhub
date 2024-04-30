@@ -21,6 +21,8 @@ extern uint8_t g_fuel;
 extern uint8_t g_engine_temperature;
 
 extern bool g_abs;
+extern bool g_traction_control;
+extern bool g_brake_fault;
 extern bool g_oil_pressure;
 extern bool g_charging;
 extern bool g_handbrake;

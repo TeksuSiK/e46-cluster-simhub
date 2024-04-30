@@ -15,6 +15,8 @@ var fuel = 0;
 var engine_temperature = $prop('TyresTemperatureAvg');
 
 var abs = Number($prop('ABSLevel') == 0);
+var traction_control = Number($prop('TCLevel') == 0);
+var brake_fault = Number($prop('ABSLevel') == 0);
 var oil_pressure = 0;
 var charging = 0;
 var handbrake = 0;
@@ -23,4 +25,4 @@ var cruise_control = 0;
 var dde = 0;
 var coolant_overheating = 0;
 
-return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`
+return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${traction_control};${brake_fault};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`

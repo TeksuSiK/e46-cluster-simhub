@@ -24,6 +24,8 @@ var fuel = 0;
 var engine_temperature = Math.round($prop('WaterTemperature'));
 
 var abs = 0;
+var traction_control = 0;
+var brake_fault = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.AirPressure'));;
 var oil_pressure = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.OilPressure'));
 var charging = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.BatteryVoltage'));
 var handbrake = Number($prop('GameRawData.TruckValues.CurrentValues.MotorValues.BrakeValues.ParkingBrake'));
@@ -32,4 +34,4 @@ var cruise_control = Number($prop('GameRawData.TruckValues.CurrentValues.Dashboa
 var dde = Number($prop('TruckSimulatorPlugin.Engine.Starting'));
 var coolant_overheating = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.WaterTemperature'));
 
-return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`
+return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${traction_control};${brake_fault};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`

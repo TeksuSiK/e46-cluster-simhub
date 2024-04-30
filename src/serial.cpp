@@ -26,6 +26,8 @@ void readSerial()
         uint8_t engine_temperature = Serial.readStringUntil(';').toInt();
 
         bool abs = Serial.readStringUntil(';').toInt();
+        bool traction_control = Serial.readStringUntil(';').toInt();
+        bool brake_fault = Serial.readStringUntil(';').toInt();
         bool oil_pressure = Serial.readStringUntil(';').toInt();
         bool charging = Serial.readStringUntil(';').toInt();
         bool handbrake = Serial.readStringUntil(';').toInt();
@@ -52,6 +54,8 @@ void readSerial()
         g_engine_temperature = engine_temperature;
 
         g_abs = abs;
+        g_traction_control = traction_control;
+        g_brake_fault = brake_fault;
         g_oil_pressure = oil_pressure;
         g_charging = charging;
         g_handbrake = handbrake;
