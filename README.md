@@ -5,7 +5,9 @@
 - Assetto Corsa
 
 ## Supported feautres
-- ABS/Traction Control
+- ABS
+- Traction Control
+- Brake system failure
 - RPM
 - Engine temperature
 - Check engine
@@ -39,7 +41,7 @@ My wiring is a bit complicated beacuse it's a part of a bigger project. You can 
 - Select board in SimHub as custom serial device (You must enable this plugin in settings first), set baudrate to 115200 and paste selected protocol
 
 ## Video
-Coming soong
+[![Video](https://img.youtube.com/vi/YgcduB5repM/maxresdefault.jpg)](https://www.youtube.com/watch?v=YgcduB5repM)
 
 ## Credits
 - [MS4x Wiki](https://www.ms4x.net/index.php?title=Siemens_MS43_CAN_Bus) for CAN messages
