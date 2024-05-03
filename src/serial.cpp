@@ -18,6 +18,11 @@ void readSerial()
         bool lights_front_fog = Serial.readStringUntil(';').toInt();
         bool lights_rear_fog = Serial.readStringUntil(';').toInt();
         uint8_t lights_indicators = Serial.readStringUntil(';').toInt();
+        bool lights_ccm_display = Serial.readStringUntil(';').toInt();
+        bool lights_ccm_low_left = Serial.readStringUntil(';').toInt();
+        bool lights_ccm_low_right = Serial.readStringUntil(';').toInt();
+        bool lights_ccm_brake_left = Serial.readStringUntil(';').toInt();
+        bool lights_ccm_brake_right = Serial.readStringUntil(';').toInt();
 
         uint16_t rpm = Serial.readStringUntil(';').toInt();
         uint16_t speed = Serial.readStringUntil(';').toInt();
@@ -46,6 +51,11 @@ void readSerial()
         g_lights_front_fog = lights_front_fog;
         g_lights_rear_fog = lights_rear_fog;
         g_lights_indicators = lights_indicators;
+        g_lights_ccm_display = lights_ccm_display;
+        g_lights_ccm_low_left = lights_ccm_low_left;
+        g_lights_ccm_low_right = lights_ccm_low_right;
+        g_lights_ccm_brake_left = lights_ccm_brake_left;
+        g_lights_ccm_brake_right = lights_ccm_brake_right;
 
         g_rpm = rpm;
         g_speed = speed;

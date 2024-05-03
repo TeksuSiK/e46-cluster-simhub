@@ -8,6 +8,11 @@ bool g_lights_main = false;
 bool g_lights_front_fog = false;
 bool g_lights_rear_fog = false;
 uint8_t g_lights_indicators = 0;
+bool g_lights_ccm_display = false;
+bool g_lights_ccm_low_left = false;
+bool g_lights_ccm_low_right = false;
+bool g_lights_ccm_brake_left = false;
+bool g_lights_ccm_brake_right = false;
 
 uint16_t g_rpm = 0;
 uint16_t g_speed = 0;

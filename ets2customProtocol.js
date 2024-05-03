@@ -17,6 +17,12 @@ if ($prop('TruckSimulatorPlugin.Lights.HazardWarningOn')) {
     lights_indicators = 0;
 }
 
+var lights_ccm_display = 0;
+var lights_ccm_low_left = 0;
+var lights_ccm_low_right = 0;
+var lights_ccm_brake_left = 0;
+var lights_ccm_brake_right = 0;
+
 var rpm = Math.round($prop('Rpms'));
 var speed = Math.round($prop('SpeedKmh'));
 var fuel = 0;
@@ -34,4 +40,4 @@ var cruise_control = Number($prop('GameRawData.TruckValues.CurrentValues.Dashboa
 var dde = Number($prop('TruckSimulatorPlugin.Engine.Starting'));
 var coolant_overheating = Number($prop('GameRawData.TruckValues.CurrentValues.DashboardValues.WarningValues.WaterTemperature'));
 
-return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${rpm};${speed};${fuel};${engine_temperature};${abs};${traction_control};${brake_fault};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`
+return `SH;${ignition};${lights_side};${lights_dip};${lights_main};${lights_front_fog};${lights_rear_fog};${lights_indicators};${lights_ccm_display};${lights_ccm_low_left};${lights_ccm_low_right};${lights_ccm_brake_left};${lights_ccm_brake_right};${rpm};${speed};${fuel};${engine_temperature};${abs};${traction_control};${brake_fault};${oil_pressure};${charging};${handbrake};${check_engine};${cruise_control};${dde};${coolant_overheating};\n`

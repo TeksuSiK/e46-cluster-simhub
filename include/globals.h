@@ -13,6 +13,11 @@ extern bool g_lights_main;
 extern bool g_lights_front_fog;
 extern bool g_lights_rear_fog;
 extern uint8_t g_lights_indicators;
+extern bool g_lights_ccm_display;
+extern bool g_lights_ccm_low_left;
+extern bool g_lights_ccm_low_right;
+extern bool g_lights_ccm_brake_left;
+extern bool g_lights_ccm_brake_right;
 
 extern uint16_t g_rpm;
 extern uint16_t g_speed;
